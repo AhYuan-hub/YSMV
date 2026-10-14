@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="AhYuan"
+description='''蹲下右键村民或警卫村民，搜索、预览并应用 YSM 模型。支持可改绑的换装按键、外观保存、多人同步和恢复原版。仅适配 YSM 2.6.5 Forge 1.20.1。'''
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.1,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="[${minecraft_version}]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.${mod_id}]]
+modId="yes_steve_model"
+mandatory=true
+versionRange="[2.6.5-forge+mc1.20.1]"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.${mod_id}]]
+modId="guardvillagers"
+mandatory=false
+versionRange="[1.6.19,]"
+ordering="AFTER"
+side="BOTH"
